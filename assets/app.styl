@@ -1,0 +1,52 @@
+@require '~vuetify/src/stylus/settings/_colors'
+
+$theme := {
+  primary:     $red.darken-2
+  accent:      $red.accent-2
+  secondary:   $grey.lighten-1
+  info:        $blue.lighten-1
+  warning:     $amber.darken-2
+  error:       $red.accent-4
+  success:     $green.lighten-2
+}
+
+// Import Vuetify styling
+@require '~vuetify/src/stylus/main.styl'
+html, body{
+  direction: rtl;
+}
+textarea:focus, input:focus, button:focus { outline: none !important; }
+
+.list__tile__title {
+    text-align: right;
+}
+
+.toolbar__title {
+    margin-right: 16px;
+}
+
+.input-group--text-field label {
+    position: absolute;
+    top: 18px;
+    right: 0;
+}
+
+.input-group label {
+    text-align: right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+.input-group.input-group--selection-controls label{
+    right: 32px;
+    left: auto;
+}
+.input-group.input-group--selection-controls .icon--selection-control {
+    left: auto;
+    right: 0;
+}
+.input-group--selection-controls__ripple {
+    -webkit-transform: translate3d(12px,-52%,0);
+    transform: translate3d(12px,-52%,0);
+    left: auto;
+    right: 0;
+}

@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'Droid-Bold';
+    src: url("~assets/fonts/DroidNaskh-Bold.ttf")
+}
+@font-face {
+    font-family: "Droid-Regular";
+    src: url("~assets/fonts/Droid-Arabic-Naskh.ttf");
+}
+
+.page-enter-active, .page-leave-active {
+    transition: opacity .5s;
+  }
+  .page-enter, .page-leave-to {
+    opacity: 0;
+  }
+*{
+    font-family: 'Droid-Regular', Arial, Helvetica, sans-serif;
+}  
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+a{
+    text-decoration: none
+}
